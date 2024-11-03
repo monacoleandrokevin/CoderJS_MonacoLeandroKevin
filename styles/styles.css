@@ -1,0 +1,24 @@
+/* Estilos para el contenedor de resultados */
+#resultados {
+    border: 1px solid #ced4da; /* Borde ligero */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+/* Estilos para las líneas divisorias */
+hr {
+    border: 1px solid #343a40; /* Color de línea bordó */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+/* Estilo para los descuentos */
+.descuento {
+    color: #7a2a2a; /* Color bordó para los descuentos */
+}
+
+/* Estilo para los resultados destacados */
+.resultado-destacado {
+    font-size: 1.15rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita */
+}
