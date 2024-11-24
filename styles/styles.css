@@ -1,15 +1,43 @@
+/* Estilos generales para asegurar una distribución adecuada */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Asegura que el padding y borde no afecten el ancho total */
+}
+
+/* Ajustes de márgenes y padding global */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegurar que las columnas no se rompan o desalineen */
+.container {
+    padding: 0; /* Eliminar padding extra */
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* Estilos para el contenedor de resultados */
-#resultados {
+#cargo1-resultados, #cargo2-resultados {
     border: 1px solid #ced4da; /* Borde ligero */
     border-radius: 5px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
+    padding: 1rem 1rem 0 1rem; /* Espaciado interno */
     background-color: #f8f9fa; /* Fondo claro */
+}
+
+/* Estilos para el contenedor de resultados */
+#cargo1-resultados p, #cargo2-resultados p{
+    padding: 0.05rem; /* Espaciado interno */
 }
 
 /* Estilos para las líneas divisorias */
 hr {
     border: 1px solid #343a40; /* Color de línea bordó */
-    margin: 20px 0; /* Espaciado vertical */
+    margin: 10px 0; /* Espaciado vertical */
 }
 
 /* Estilo para los descuentos */
@@ -21,4 +49,86 @@ hr {
 .resultado-destacado {
     font-size: 1.15rem; /* Tamaño de fuente más grande */
     font-weight: bold; /* Negrita */
+}
+
+/* Estilo para las columnas en la fila */
+.col-md-4,
+.col-md-8 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Asegurar que el total se vea bien en el layout */
+#resultado-total {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+#resultado-total p{
+    padding: 0.05rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#button-container {
+    padding: 1rem 1rem 0rem  1rem; /* Espaciado superior para los botones */
+    text-align: center;
+}
+
+.button-container-principal {
+    display: flex;          /* Activa el modelo Flexbox */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center;    /* Alinea verticalmente los elementos al centro */
+    width: 100%;            /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.custom-margin-top {
+    margin-top: 1rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 0.5rem !important;
+}
+
+.ultimas-simulaciones{
+    margin-top: 1rem;
+    border: 1px solid #ced4da; /* Borde ligero */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+.ultimas-simulaciones table{
+    margin-bottom: 0;
+}
+
+#download-pdf {
+    display: block; /* Aseguramos que se comporte como un bloque */
+    margin: auto; /* Centra el botón horizontalmente */
+}
+
+.col-md-6 {
+    display: flex; /* Activamos Flexbox */
+    flex-direction: column; /* Alineamos los elementos en una columna */
+    justify-content: center; /* Centramos verticalmente */
+    align-items: center; /* Centramos horizontalmente */
+}
+
+#cargo1Nombre, 
+#cargo2Nombre {
+    color:#203fa7;
+    font-size: 80%;
 }

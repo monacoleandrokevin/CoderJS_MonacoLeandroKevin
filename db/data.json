@@ -1,0 +1,82 @@
+[
+    {
+        "id": "13475",
+        "nombre": "Maestra de Grado de Enseñanza Primaria",
+        "propuestas": {
+            "oct2024": { "basico": 510000, "incDocente": 5100 },
+            "sep2024": { "basico": 500000, "incDocente": 5000 },
+            "ago2024": { "basico": 490000, "incDocente": 4900 },
+            "jul2024": { "basico": 480000, "incDocente": 4800 }
+        }
+    },
+    {
+        "id": "13480",
+        "nombre": "Maestro de Jardín de Infantes",
+        "propuestas": {
+            "oct2024": { "basico": 530000, "incDocente": 5300 },
+            "sep2024": { "basico": 520000, "incDocente": 5200 },
+            "ago2024": { "basico": 510000, "incDocente": 5100 },
+            "jul2024": { "basico": 500000, "incDocente": 5000 }
+        }
+    },
+    {
+        "id": "13910",
+        "nombre": "Maestro Enseñanza Media",
+        "propuestas": {
+            "oct2024": { "basico": 490000, "incDocente": 4900 },
+            "sep2024": { "basico": 470000, "incDocente": 4700 },
+            "ago2024": { "basico": 460000, "incDocente": 4600 },
+            "jul2024": { "basico": 450000, "incDocente": 4500 }
+        }
+    },
+    {
+        "id": "13515",
+        "nombre": "Maestro Materia Especial",
+        "propuestas": {
+            "oct2024": { "basico": 540000, "incDocente": 5400 },
+            "sep2024": { "basico": 530000, "incDocente": 5300 },
+            "ago2024": { "basico": 520000, "incDocente": 5200 },
+            "jul2024": { "basico": 510000, "incDocente": 5100 }
+        }
+    },
+    {
+        "id": "13255",
+        "nombre": "Director de Ens. Primaria",
+        "propuestas": {
+            "oct2024": { "basico": 620000, "incDocente": 6200 },
+            "sep2024": { "basico": 600000, "incDocente": 6000 },
+            "ago2024": { "basico": 590000, "incDocente": 5900 },
+            "jul2024": { "basico": 580000, "incDocente": 5800 }
+        }
+    },
+    {
+        "id": "13920",
+        "nombre": "Hs. cat. Ley 22416 (1 hora)",
+        "propuestas": {
+            "oct2024": { "basico": 62000, "incDocente": 6200 },
+            "sep2024": { "basico": 60000, "incDocente": 6000 },
+            "ago2024": { "basico": 59000, "incDocente": 5900 },
+            "jul2024": { "basico": 58000, "incDocente": 5800 }
+        }
+    },
+    {
+        "id": "13930",
+        "nombre": "Jornada Extendida (Frente alumnos)",
+        "propuestas": {
+            "oct2024": { "basico": 55000, "incDocente": 6200 },
+            "sep2024": { "basico": 53000, "incDocente": 6000 },
+            "ago2024": { "basico": 52000, "incDocente": 5900 },
+            "jul2024": { "basico": 51000, "incDocente": 5800 }
+        }
+    },
+    {
+        "id": "13940",
+        "nombre": "Quinta hora (Frente alumnos)",
+        "propuestas": {
+            "oct2024": { "basico": 49000, "incDocente": 6200 },
+            "sep2024": { "basico": 47000, "incDocente": 6000 },
+            "ago2024": { "basico": 46000, "incDocente": 5900 },
+            "jul2024": { "basico": 45000, "incDocente": 5800 }
+        }
+    }
+]

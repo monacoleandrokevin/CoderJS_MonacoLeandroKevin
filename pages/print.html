@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Simulación de Salario UEPC</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- HMTL2Canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- jspdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- JavaScript para página de impresión -->
+    <script src="../js/print.js" defer></script>
+</head>
+<body>
+    <div class="container mt-4 position-relative">
+        <!-- Botón Descargar PDF -->
+        <button id="descargar-pdf" class="btn btn-primary position-absolute top-0 end-0 mt-3 me-3">Descargar PDF</button>
+
+        <!-- Primera fila: Título y fecha -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Simulación de Salario UEPC</h2>
+                <p id="fecha-hora" class="text-center resultado-destacado"></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Segunda fila: Información general -->
+        <div class="row">
+            <div class="col-12">
+                <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+                <p><strong>Propuesta:</strong> <span id="select-propuesta"></span></p>
+                <p><strong>Antigüedad:</strong> <span id="select-antiguedad"></span></p>
+                <p><strong>Afiliación al gremio:</strong> <span id="select-afiliacion"></span></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Tercera fila: Detalles de los cargos -->
+        <div class="row">
+            <!-- Columna izquierda: Cargo principal -->
+            <div class="col-md-6" id="cargo1-resultados">
+                <h4 class="text-center">Cargo Principal</h4>
+                <h4 class="text-center"><span id="cargo1Nombre"></span></h4>
+                <hr>
+                <p><strong>Salario Base:</strong> <span id="salario-base-principal"></span></p>
+                <p><strong>Antigüedad:</strong> <span id="antiguedad-principal"></span></p>
+                <p><strong>Incentivo Docente:</strong> <span id="incentivo-principal"></span></p>
+                <p><strong>Salario Bruto:</strong> <span id="salario-bruto-principal"></span></p>
+                <hr>
+                <p><strong class="descuento">Jubilación:</strong> <span id="jubilacion-principal"></span></p>
+                <p><strong class="descuento">Obra Social:</strong> <span id="obra-social-principal"></span></p>
+                <p><strong class="descuento">Sindicato:</strong> <span id="sindicato-principal"></span></p>
+                <p><strong class="descuento">Total Descuentos:</strong> <span id="total-descuentos-principal"></span></p>
+                <hr>
+                <p class="resultado-destacado"><strong>Salario Neto:</strong> <span id="salario-neto-principal"></span></p>
+            </div>
+
+            <!-- Columna derecha: Cargo adicional -->
+            <div class="col-md-6" id="cargo2-resultados">
+                <h4 class="text-center">Cargo Adicional</h4>
+                <h4 class="text-center"><span id="cargo2Nombre"></span></h4>
+                <hr>
+                <p><strong>Salario Base:</strong> <span id="salario-base-adicional"></span></p>
+                <p><strong>Antigüedad:</strong> <span id="antiguedad-adicional"></span></p>
+                <p><strong>Incentivo Docente:</strong> <span id="incentivo-adicional"></span></p>
+                <p><strong>Salario Bruto:</strong> <span id="salario-bruto-adicional"></span></p>
+                <hr>
+                <p><strong class="descuento">Jubilación:</strong> <span id="jubilacion-adicional"></span></p>
+                <p><strong class="descuento">Obra Social:</strong> <span id="obra-social-adicional"></span></p>
+                <p><strong class="descuento">Sindicato:</strong> <span id="sindicato-adicional"></span></p>
+                <p><strong class="descuento">Total Descuentos:</strong> <span id="total-descuentos-adicional"></span></p>
+                <hr>
+                <p class="resultado-destacado"><strong>Salario Neto:</strong> <span id="salario-neto-adicional"></span></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Fila inferior: Totalizadores -->
+        <div class="row">
+            <div class="col-12" id="resultado-total">
+                <h4>Totalizador General</h4>
+                <p><strong>Total Salario Bruto:</strong> <span id="total-salario-bruto"></span></p>
+                <p><strong class="descuento">Total Descuentos:</strong> <span id="total-descuentos"></span></p>
+                <p class="resultado-destacado"><strong>Total Salario Neto:</strong> <span id="total-salario-neto"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
